@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Styles/calculator.css">
+  </head>
+
+  <body>
+    <div id="result" class="calculations"></div>
+    <div id="calculator">
+    <p>
+        <button onclick="appendToCalculation('1')" class="gray-button">1</button>
+        <button onclick="appendToCalculation('2')" class="gray-button">2</button>
+        <button onclick="appendToCalculation('3')" class="gray-button">3</button>
+        <button onclick="appendToCalculation(' + ')"class="orange-button">+</button>
+    </p>
+
+    <p>
+        <button onclick="appendToCalculation('4')" class="gray-button">4</button>
+        <button onclick="appendToCalculation('5')" class="gray-button">5</button>
+        <button onclick="appendToCalculation('6')" class="gray-button">6</button>
+        <button onclick="appendToCalculation(' - ')" class="orange-button">-</button>
+    </p>
+
+    <p>
+        <button onclick="appendToCalculation('7')" class="gray-button">7</button>
+        <button onclick="appendToCalculation('8')" class="gray-button">8</button>
+        <button onclick="appendToCalculation('9')" class="gray-button">9</button>
+        <button onclick="appendToCalculation(' * ')" class="orange-button">*</button>
+    </p>
+
+    <p>
+        <button onclick="appendToCalculation('0')" class="gray-button">0</button>
+        <button onclick="appendToCalculation('.')" class="gray-button">.</button>
+        <button onclick="calculateResult()" class="gray-button">=</button>
+        <button onclick="appendToCalculation(' / ')" class="orange-button">/</button>
+    </p>
+
+    <p>
+        <button onclick="clearCalculation()" class="clear-button gray-button">Clear</button>
+    </p>
+
+    </div>
+
+    <script src="scripts/calculator.js"></script>
+  </body>
+
+</html>
